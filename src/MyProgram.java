@@ -13,9 +13,10 @@ public class MyProgram {
         System.out.println("Please input a 3rd number.");
         double num3 = input.nextDouble();
 
-        displaySortedNumbers(num1, num2, num3);
+        Numbers.displaySortedNumbers(num1, num2, num3);
+
     }
- 
+    public class Numbers {
     public static void displaySortedNumbers (double num1, double num2, double num3){
 
         double[] numbers = {num1, num2, num3};
@@ -23,4 +24,7 @@ public class MyProgram {
 
         System.out.println("Numbers in increasing order: " + Arrays.toString(numbers));
     }
+    }
 }
+
+
